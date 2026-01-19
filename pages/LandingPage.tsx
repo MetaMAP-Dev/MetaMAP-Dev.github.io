@@ -18,12 +18,12 @@ export const LandingPage: React.FC = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
             </span>
-            <span>Version 2.1 Now Live on Rhino Yak</span>
+            <span>Version 0.0.58 Now Live on Rhino Yak</span>
           </div>
 
           <h1 className="text-6xl md:text-8xl font-black tracking-tight text-neutral-900 mb-8 leading-[1.05]">
             Instant City Context <br />
-            <span className="text-emerald-600">for Professionals.</span>
+            <span className="text-emerald-600">for Architects and Urban Planners.</span>
           </h1>
 
           <p className="text-xl text-neutral-500 max-w-2xl mx-auto mb-14 leading-relaxed font-medium">
