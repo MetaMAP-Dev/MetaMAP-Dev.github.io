@@ -2,7 +2,7 @@
 import React from 'react';
 import { InteractiveDemo } from '../components/InteractiveDemo';
 import { Workflow } from '../components/Workflow';
-import { Rocket, ShieldCheck, Globe, Zap, ArrowRight, Github, BarChart3 } from 'lucide-react';
+import { Rocket, Globe, ArrowRight, Github, BarChart3 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const LandingPage: React.FC = () => {
@@ -47,74 +47,7 @@ export const LandingPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Trust Bar */}
-      <section className="py-16 border-y border-neutral-100 bg-neutral-50/30">
-        <div className="max-w-7xl mx-auto px-4 flex flex-wrap justify-center items-center gap-16">
-          <span className="font-bold text-neutral-300 text-sm tracking-widest uppercase">OpenStreetMap API</span>
-          <span className="font-bold text-neutral-300 text-sm tracking-widest uppercase">Global Building Atlas</span>
-          <span className="font-bold text-neutral-300 text-sm tracking-widest uppercase">B-Rep Generation</span>
-          <span className="font-bold text-neutral-300 text-sm tracking-widest uppercase">Open Source</span>
-        </div>
-      </section>
 
-      {/* Feature Focus */}
-      <section className="py-32 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-24 items-center">
-            <div className="order-2 lg:order-1">
-              <div className="bg-neutral-50 rounded-[40px] p-12 border border-neutral-100 shadow-inner relative overflow-hidden group">
-                <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
-                  <Zap size={120} />
-                </div>
-                <div className="relative z-10 space-y-6">
-                  <div className="flex justify-between items-center text-xs font-bold text-neutral-400 uppercase tracking-widest">
-                    <span>Legacy Workflow</span>
-                    <span className="text-emerald-600">MetaMAP</span>
-                  </div>
-                  <div className="h-12 bg-neutral-200 rounded-2xl flex items-center overflow-hidden border border-white shadow-sm">
-                    <div className="h-full bg-red-400 w-[15%] flex items-center justify-center text-[10px] font-bold text-white uppercase">Manual</div>
-                    <div className="h-full bg-emerald-500 w-[85%] flex items-center px-4 text-xs font-bold text-white italic">Instant Geometry Generation</div>
-                  </div>
-                  <div className="space-y-4 pt-6">
-                    <div className="bg-white p-5 rounded-2xl shadow-sm border border-neutral-100 flex items-center space-x-4">
-                      <div className="w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center text-emerald-600 font-bold italic">M</div>
-                      <div>
-                        <p className="text-xs font-bold text-neutral-900 uppercase tracking-tighter">GeoJSON to Rhino Brep</p>
-                        <p className="text-[10px] text-neutral-500">Converted 840 geometries in 1.2s</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="order-1 lg:order-2">
-              <h2 className="text-4xl font-black text-neutral-900 mb-8 leading-tight">Focus on Analysis,<br />Not Asset Fetching.</h2>
-              <p className="text-lg text-neutral-500 mb-10 leading-relaxed">
-                Manually drawing site context is a relic of the past. MetaMAP provides a high-fidelity spatial foundation for your environmental and urban simulations.
-              </p>
-
-              <div className="grid gap-6">
-                {[
-                  { title: "Clean Geometry", desc: "Watertight Breps and Meshes ready for CFD analysis." },
-                  { title: "Metadata Intact", desc: "Building names, types, and levels preserved in keys." },
-                  { title: "Global Reach", desc: "Unprecedented coverage with Building Atlas integration." }
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start space-x-4">
-                    <div className="mt-1 p-1 bg-emerald-100 rounded-full text-emerald-600">
-                      <ShieldCheck size={20} />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-neutral-900">{item.title}</h4>
-                      <p className="text-sm text-neutral-500">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <Workflow />
 

@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
               Free, open-source, and dedicated to modernizing the urban designer's spatial toolset.
             </p>
             <div className="flex space-x-5">
-              <a href="#" className="p-3.5 bg-white border border-neutral-100 rounded-2xl text-neutral-400 hover:text-emerald-600 hover:shadow-md transition-all">
+              <a href="https://github.com/karadagi/MetaMAP" target="_blank" rel="noopener noreferrer" className="p-3.5 bg-white border border-neutral-100 rounded-2xl text-neutral-400 hover:text-emerald-600 hover:shadow-md transition-all">
                 <Github size={22} />
               </a>
               <a href="#" className="p-3.5 bg-white border border-neutral-100 rounded-2xl text-neutral-400 hover:text-emerald-600 hover:shadow-md transition-all">
@@ -27,12 +27,12 @@ export const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-          
+
           <div>
             <h4 className="font-bold text-neutral-900 mb-8 uppercase text-xs tracking-[0.2em]">Community</h4>
             <ul className="space-y-4 text-neutral-500 font-medium text-sm">
               <li><a href="https://www.food4rhino.com/en/app/metamap" className="hover:text-emerald-600 transition-colors">Food4Rhino</a></li>
-              <li><a href="https://github.com/metamap-org" className="hover:text-emerald-600 transition-colors">GitHub</a></li>
+              <li><a href="https://github.com/karadagi/MetaMAP" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-600 transition-colors">GitHub</a></li>
               <li><a href="#" className="hover:text-emerald-600 transition-colors">Bug Reports</a></li>
               <li><a href="#" className="hover:text-emerald-600 transition-colors">Changelog</a></li>
             </ul>
@@ -48,12 +48,12 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-neutral-100 pt-10 flex flex-col md:flex-row justify-between items-center text-xs text-neutral-400 font-semibold tracking-wide">
           <p>© {new Date().getFullYear()} METAMAP ECOSYSTEM. GPL-3.0 OPEN SOURCE.</p>
           <div className="flex space-x-8 mt-6 md:mt-0 uppercase">
-             <span>Rhino 7 & 8 Ready</span>
-             <span>Grasshopper 1.0</span>
+            <span>Rhino 7 & 8 Ready</span>
+            <span>Grasshopper 1.0</span>
           </div>
         </div>
       </div>
