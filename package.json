@@ -2,7 +2,7 @@
   "name": "metamap-for-rhino-grasshopper",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://metamap-dev.github.io/MetaMAP-Website/",
+  "homepage": "https://metamap-dev.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
